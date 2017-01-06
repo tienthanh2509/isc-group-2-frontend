@@ -152,3 +152,4 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/bower,linux,node,phpstorm,windows
 
 public/assets/
+public/bower_components/
