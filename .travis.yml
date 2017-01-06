@@ -6,7 +6,7 @@ addons:
       - ruby
 language: node_js
 node_js:
-  - "6.1.x"
+  - "6.1"
 
 before_install:
     - "npm install -g npm"
