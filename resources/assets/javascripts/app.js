@@ -19,5 +19,13 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
         .when("/contact", {
             templateUrl: "page/contact.html"
         })
+
+        .when("/login", {
+            templateUrl: "page/login.html"
+        })
+        .when("/forgot_password", {
+            templateUrl: "page/forgot_password.html"
+        })
+
         .otherwise('/');
 }]);

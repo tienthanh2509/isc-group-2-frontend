@@ -9,6 +9,8 @@ git glone git@github.com:tienthanh2509/isc-group-2-frontend.git
 cd isc-group-2-frontend/template
 # Install npm dependencies
 npm install
+# Install bower dependencies
+bower install
 # Install ruby sass
 gem install sass
 
