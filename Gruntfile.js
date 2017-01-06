@@ -84,7 +84,7 @@ module.exports = function (grunt) {
             }
         },
         watch: {
-            sass_sunshine: {
+            sass_app: {
                 files: [resources + '/stylesheets/*.scss'],
                 tasks: ['sass'],
                 options: {
@@ -92,7 +92,7 @@ module.exports = function (grunt) {
                     spawn: false
                 }
             },
-            cssmin_sunshine: {
+            cssmin_app: {
                 files: ['public/assets/css/app.css'],
                 tasks: ['cssmin'],
                 options: {
@@ -100,7 +100,7 @@ module.exports = function (grunt) {
                     spawn: false
                 }
             },
-            concat_sunshine: {
+            concat_app: {
                 files: [resources + '/javascripts/*.js'],
                 tasks: ['concat'],
                 options: {
@@ -108,7 +108,7 @@ module.exports = function (grunt) {
                     spawn: false
                 }
             },
-            uglify_sunshine: {
+            uglify_app: {
                 files: ['public/assets/js/app.js'],
                 tasks: ['uglify'],
                 options: {
