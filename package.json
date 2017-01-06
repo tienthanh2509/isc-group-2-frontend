@@ -1,5 +1,5 @@
 {
-  "name": "construction-cost-estimates",
+  "name": "edu-soft",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -16,7 +16,7 @@
     "estimates"
   ],
   "author": "Phạm Tiến Thành <tienthanh.dqc@gmail.com>",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/tienthanh2509/isc-group-2-frontend/issues"
   },

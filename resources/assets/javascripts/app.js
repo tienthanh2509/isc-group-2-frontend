@@ -4,7 +4,7 @@
  * Cấu hình AngularJS
  * @type {angular.Module}
  */
-var app = angular.module('costEstimates', ['ngRoute']);
+var app = angular.module('eduSoft', ['ngRoute']);
 // Định tuyến
 app.config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
     $locationProvider.hashPrefix('!');

@@ -29,7 +29,7 @@ module.exports = function (grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'public/assets/css/app.css': resources + '/stylesheets/app.scss'
+                    'public/assets/css/edusoft.css': resources + '/stylesheets/edusoft.scss'
                 }
             }
         },
@@ -42,11 +42,11 @@ module.exports = function (grunt) {
                 src: [
                     resources + '/javascripts/app-utils.js',
                     resources + '/javascripts/app.js',
-                    resources + '/javascripts/app/services/apiService.js',
-                    resources + '/javascripts/app/controllers/headerNavbarController.js',
-                    resources + '/javascripts/app/controllers/finalExamController.js'
+                    resources + '/javascripts/edusoft/services/apiService.js',
+                    resources + '/javascripts/edusoft/controllers/headerNavbarController.js',
+                    resources + '/javascripts/edusoft/controllers/finalExamController.js'
                 ],
-                dest: 'public/assets/js/app.js'
+                dest: 'public/assets/js/edusoft.js'
             }
         },
         cssmin: {
@@ -71,7 +71,7 @@ module.exports = function (grunt) {
                     mangle: false
                 },
                 files: [{
-                    'public/assets/js/app.min.js': ['public/assets/js/app.js']
+                    'public/assets/js/edusoft.min.js': ['public/assets/js/edusoft.js']
                 }]
             }
         },
@@ -93,7 +93,7 @@ module.exports = function (grunt) {
                 }
             },
             cssmin_app: {
-                files: ['public/assets/css/app.css'],
+                files: ['public/assets/css/edusoft.css'],
                 tasks: ['cssmin'],
                 options: {
                     debounceDelay: 1000,
@@ -109,7 +109,7 @@ module.exports = function (grunt) {
                 }
             },
             uglify_app: {
-                files: ['public/assets/js/app.js'],
+                files: ['public/assets/js/edusoft.js'],
                 tasks: ['uglify'],
                 options: {
                     debounceDelay: 1000,
