@@ -1,66 +1,7 @@
-/* Sticky footer styles
--------------------------------------------------- */
+/*!
+ * Copyright (c) 2017 PT Studio
+ *
+ * Licensed under GPL-3.0 (https://github.com/tienthanh2509/isc-group-2-frontend/blob/master/LICENSE)
+ */
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px;
-  /* Vertically center the text there */
-  background-color: #263238;
-  color: #fff;
-  color: rgba(255, 255, 255, 0.8);
-  a {
-    font-style: italic;
-    color: #fff;
-    color: rgba(255, 255, 255, 0.8);
-    &:hover {
-      color: #fff;
-      color: rgba(255, 255, 255, 0.8);
-    }
-  }
-  p {
-    margin-bottom: 0;
-  }
-}
-
-/* Bootstrap Overlays
--------------------------------------------------- */
-
-/* Sunshine CSS Style
--------------------------------------------------- */
-
-#reader-list {
-  .panel-heading {
-    background-color: rgba(129, 199, 132, 0.2);
-    border-bottom: 1px solid rgba(129, 199, 132, 0.5);
-  }
-
-  .fa-th {
-    color: #1f7e9a;
-  }
-
-  b {
-    color: green;
-  }
-}
-
-/* Media Queries
--------------------------------------------------- */
-@media only screen and (min-height: 500px) {
-  .panel-body {
-    height: 114px;
-  }
-}
+@import "reboot";

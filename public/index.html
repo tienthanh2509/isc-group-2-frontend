@@ -23,7 +23,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-static-top">
+<nav class="navbar navbar-inverse navbar-static-top" ng-controller="headerNavbarController">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -41,14 +41,26 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="nav-item active" ng-class="{ active: isActive('/')}">
+                <li class="nav-item" ng-class="{ active: isActive('/')}">
                     <a class="nav-link" href="#!/">Trang chủ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" ng-class="{ active: isActive('/dashboard')}">
+                    <a class="nav-link" href="#!/dashboard">Dashboard</a>
                 </li>
                 <li class="nav-item" ng-class="{ active: isActive('/about')}">
                     <a class="nav-link" href="#!/about">Thông tin</a>
                 </li>
                 <li class="nav-item" ng-class="{ active: isActive('/contact')}">
                     <a class="nav-link" href="#!/contact">Liên hệ</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav pull-right">
+                <li class="nav-item" ng-class="{ active: isActive('/login')}">
+                    <a class="nav-link" href="#!/login">Đăng nhập</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!/profile">Chào, Tèo</a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -66,18 +78,23 @@
         </p>
         <p class="pull-right">
             Built with <i class="fa fa-heart text-danger"></i> by
-            <a href="http://github.com/tienthanh2509" target="_blank">Tiến Thành</a>
+            <a href="http://github.com/taminhchau" target="_blank">Châu</a>,
+            Đức,
+            <a href="http://github.com/tienthanh2509" target="_blank">Thành</a>,
+            <a href="http://github.com/monleden" target="_blank">Thiện</a>,
+            <a href="http://github.com/dknyonelil" target="_blank">Trọng</a>
         </p>
     </div>
 </footer>
 
+<!-- jQuery -->
 <script src="bower_components/jquery/dist/jquery.slim.js"></script>
+<!-- Bootstrap -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- AngularJS -->
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-route/angular-route.min.js"></script>
-<!-- ChartJS -->
-<!--<script src="bower_components/chart.js/dist/Chart.bundle.min.js"></script>-->
+
 <!-- CCE Application -->
 <script src="assets/js/app.min.js"></script>
 
