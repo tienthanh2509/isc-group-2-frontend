@@ -11,6 +11,8 @@ cd isc-group-2-frontend/template
 npm install
 # Install bower dependencies
 bower install
+#Download ruby
+http://rubyinstaller.org/downloads/
 # Install ruby sass
 gem install sass
 
