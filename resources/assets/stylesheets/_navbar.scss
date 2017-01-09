@@ -15,7 +15,7 @@
 
 .sidebar-nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  background: linear-gradient(to right, #1ccacd 10px, #1ccacd 10px) repeat-x;
+  background: linear-gradient(to right, #ff3f4d 10px, #1ccacd 10px) repeat-x;
 }
 
 .sidebar-nav ul {
@@ -35,9 +35,7 @@
 .sidebar-nav ul a {
   padding: 10px 20px;
   color: #ffffff;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  border: rgba(255, 255, 255, 0.5) solid 1px;
 }
 
 .sidebar-nav ul a:hover {
@@ -50,6 +48,7 @@
   color: #1ccacd;
   text-decoration: none;
   background-color: #ffffff;
+  border:#ff3f4d solid 1px ;
 }
 
 .sidebar-nav ul ul a {
@@ -57,8 +56,17 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.sidebar-nav ul ul a:hover, .sidebar-nav ul ul a:focus, .sidebar-nav ul ul a:active {
-  background-color: rgba(255, 255, 255, 0.2);
+.sidebar-nav ul ul a:focus, .sidebar-nav ul ul a:active {
+  color: #1ccacd;
+  text-decoration: none;
+  background-color: #ffffff;
+  border:#ff3f4d solid 1px ;
+}
+
+.sidebar-nav ul ul a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #ff3f4d;
 }
 
 .sidebar-nav-item {
