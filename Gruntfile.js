@@ -41,6 +41,7 @@ module.exports = function (grunt) {
             dist: {
                 src: [
                     resources + '/javascripts/app-utils.js',
+                    resources + '/javascripts/navbar.js',
                     resources + '/javascripts/app.js',
                     resources + '/javascripts/edusoft/services/apiService.js',
                     resources + '/javascripts/edusoft/controllers/headerNavbarController.js',
