@@ -20,7 +20,7 @@ gem install sass
 # How to play :)
 ```bash
 # Warning! Make sure you have private key before clone using ssh else try https instead
-git glone git@github.com:tienthanh2509/isc-group-2-frontend.git
+git clone git@github.com:tienthanh2509/isc-group-2-frontend.git
 
 # Install npm dependencies
 npm install
