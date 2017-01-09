@@ -10,6 +10,8 @@
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- metisMenu -->
+    <link href="bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom css -->
     <link href="assets/css/edusoft.min.css" rel="stylesheet">
@@ -24,7 +26,7 @@
 <body>
 
 <nav class="navbar navbar-inverse navbar-static-top" ng-controller="headerNavbarController">
-    <div class="container">
+    <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -41,42 +43,84 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="nav-item" ng-class="{ active: isActive('/')}">
-                    <a class="nav-link" href="#!/">Trang chủ <span class="sr-only">(current)</span></a>
+                <li ng-class="{ active: isActive('/')}">
+                    <a class="nav-link" href="#!/">Bảng điều khiển <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item" ng-class="{ active: isActive('/dashboard')}">
-                    <a class="nav-link" href="#!/dashboard">Dashboard</a>
-                </li>
-                <li class="nav-item" ng-class="{ active: isActive('/about')}">
+                <li ng-class="{ active: isActive('/about')}">
                     <a class="nav-link" href="#!/about">Thông tin</a>
                 </li>
-                <li class="nav-item" ng-class="{ active: isActive('/contact')}">
+                <li ng-class="{ active: isActive('/contact')}">
                     <a class="nav-link" href="#!/contact">Liên hệ</a>
                 </li>
             </ul>
 
             <ul class="nav navbar-nav pull-right">
-                <li class="nav-item" ng-class="{ active: isActive('/login')}">
-                    <a class="nav-link" href="#!/login">Đăng nhập</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#!/profile">Chào, Tèo</a>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> Chào <b>Châu</b> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Hồ sơ</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Thiết lập</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="/!logout"><i class="fa fa-sign-out fa-fw"></i> Đăng xuất</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
 
-<div class="container">
-    <div ng-view></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <aside class="sidebar">
+                <nav class="sidebar-nav">
+                    <ul class="metismenu" id="menu">
+                        <li class="active">
+                            <a class="has-arrow" href="#" aria-expanded="true">
+                                <span class="sidebar-nav-item">Lớp học</span>
+                            </a>
+                            <ul aria-expanded="true">
+                                <li>
+                                    <a href="#">
+                                        <span class="sidebar-nav-item-icon fa fa-code-fork"></span> Danh sách khóa học
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false">Học viên</a>
+                            <ul aria-expanded="false">
+                                <li><a href="#">Danh sách học viên</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!--<ul class="nav nav-pills nav-stacked">-->
+                <!--<li role="presentation" class="active"><a href="#">Lớp học</a></li>-->
+                <!--<li role="presentation"><a href="#">Học viên</a></li>-->
+                <!--<li role="presentation"><a href="#"></a></li>-->
+            <!--</ul>-->
+        </div>
+        <div class="col-md-9">
+            <div ng-view></div>
+        </div>
+    </div>
 </div> <!-- /container -->
 
 <footer class="footer">
-    <div class="container clearfix">
+    <div class="container-fluid clearfix">
         <p class="pull-left">Designed by
             <a target="_blank" href="https://d13ht01.tk/?utm_source=construction-cost-estimates&utm_medium=footer&utm_campaign=project">PT Studio</a>.
         </p>
-        <p class="pull-right">
+        <p class="pull-right hidden-sm">
             Built with <i class="fa fa-heart text-danger"></i> by
             <a href="http://github.com/taminhchau" target="_blank">Châu</a>,
             Đức,
@@ -88,9 +132,11 @@
 </footer>
 
 <!-- jQuery -->
-<script src="bower_components/jquery/dist/jquery.slim.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- metisMenu -->
+<script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
 <!-- AngularJS -->
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-route/angular-route.min.js"></script>
