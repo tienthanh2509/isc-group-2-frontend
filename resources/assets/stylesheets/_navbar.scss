@@ -1,0 +1,29 @@
+/* Sticky header styles
+-------------------------------------------------- */
+.navbar-inverse {
+  background-color: #1ccacd;
+  border-color: #ffffff;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+  color: #1ccacd;
+  background-color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #ffffff;
+  background-color: #ff3f4d;
+}
+
+Custom lại css header...
+
