@@ -51,6 +51,10 @@
   border:#ff3f4d solid 1px ;
 }
 
+.metismenu li.active .has-arrow::after {
+  border-color: #1ccacd;
+}
+
 .sidebar-nav ul ul a {
   padding: 10px 30px;
   background-color: rgba(255, 255, 255, 0.1);
