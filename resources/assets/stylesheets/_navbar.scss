@@ -88,3 +88,26 @@
   color: #ffffff;
   background-color: #ff3f4d;
 }
+
+.navbar-inverse .navbar-toggle {
+  border-color: #ffffff;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: #1ccacd;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+  color: #1ccacd;
+  background-color: #ffffff;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ff3f4d;
+}
