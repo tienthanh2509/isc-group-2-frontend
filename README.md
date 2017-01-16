@@ -15,18 +15,25 @@ http://rubyinstaller.org/downloads/
 # Install Bower, Grunt, Sass
 npm install -g bower grunt
 gem install sass
+
+# Warning! Make sure you have private key before clone using ssh else try https instead
+git clone git@github.com:tienthanh2509/isc-group-2-frontend.git
+
+cd isc-group-2-frontend
+
 ```
 
 # How to play :)
 ```bash
-# Warning! Make sure you have private key before clone using ssh else try https instead
-git clone git@github.com:tienthanh2509/isc-group-2-frontend.git
-
 # Install npm dependencies
 npm install
 # Install bower dependencies
 bower install
 
-# Grunt task
-grunt && grunt watch
+# Grunt task "grunt watch" if needed!
+grunt
+
+# Run nodejs express server | Use PORT env for custom listening port
+node app.js
+
 ```
