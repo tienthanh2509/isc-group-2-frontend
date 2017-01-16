@@ -48,7 +48,7 @@
   color: #1ccacd;
   text-decoration: none;
   background-color: #ffffff;
-  border:#ff3f4d solid 1px ;
+  border: #ff3f4d solid 1px;
 }
 
 .metismenu li.active .has-arrow::after {
@@ -64,7 +64,7 @@
   color: #1ccacd;
   text-decoration: none;
   background-color: #ffffff;
-  border:#ff3f4d solid 1px ;
+  border: #ff3f4d solid 1px;
 }
 
 .sidebar-nav ul ul a:hover {
@@ -92,18 +92,18 @@
   color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:focus,
-.navbar-inverse .navbar-nav>.active>a:hover {
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
   color: #1ccacd;
   background-color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav > li > a {
   color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav > li > a:hover {
   color: #ffffff;
   background-color: #ff3f4d;
 }
@@ -120,13 +120,26 @@
   border-color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
   color: #1ccacd;
   background-color: #ffffff;
 }
 
-.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
   color: #ffffff;
   text-decoration: none;
+  background-color: #ff3f4d;
+}
+
+// Sticky show panel
+.modal-header {
+  background-color: #1ccacd;
+}
+
+.modal-title {
+  color: #ffffff;
+}
+
+.form-group-sm select.form-control:hover {
   background-color: #ff3f4d;
 }
