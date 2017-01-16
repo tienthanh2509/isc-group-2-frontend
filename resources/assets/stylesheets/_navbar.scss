@@ -51,8 +51,12 @@
   border: #ff3f4d solid 1px;
 }
 
-.metismenu li.active .has-arrow::after {
-  border-color: #1ccacd;
+.metismenu li.active:focus .has-arrow:after {
+  border-color: #ff3f4d;
+}
+
+.metismenu li.active .has-arrow:after {
+  border-color: #ffffff;
 }
 
 .sidebar-nav ul ul a {
