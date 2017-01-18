@@ -19,12 +19,17 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
         .when("/contact", {
             templateUrl: "page/contact.html"
         })
+
+        .when("/faculty", {
+            templateUrl: "page/faculty.html"
+        })
         .when("/student", {
             templateUrl: "page/student.html"
         })
         .when("/classroom", {
             templateUrl: "page/classroom.html"
         })
+
         .when("/login", {
             templateUrl: "page/login.html"
         })
