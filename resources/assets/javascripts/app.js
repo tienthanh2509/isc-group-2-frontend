@@ -50,5 +50,8 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
         .when("/timetable", {
             templateUrl: "page/timetable.html"
         })
+        .when("/result", {
+            templateUrl: "page/result.html"
+        })
         .otherwise('/');
 }]);
