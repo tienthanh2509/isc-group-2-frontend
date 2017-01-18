@@ -31,6 +31,11 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
         .when("/forgot_password", {
             templateUrl: "page/forgot_password.html"
         })
-
+        .when("/schedule", {
+            templateUrl: "page/schedule.html"
+        })
+        .when("/timetable", {
+            templateUrl: "page/timetable.html"
+        })
         .otherwise('/');
 }]);
