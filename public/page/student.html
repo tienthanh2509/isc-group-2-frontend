@@ -1,8 +1,10 @@
- <div class="row col-md-12 custyle">
-  <h2 class="text-center">Danh sách học viên</h2>
+<div class="row col-md-12 custyle">
+    <h2 class="text-center">Danh sách học viên</h2>
+    <button type="button" class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#myModal">
+        Thêm mới học viên
+    </button>
     <table class="table table-striped custab">
-    <thead>
-    <button type="button" class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#myModal">Thêm mới học viên</button>
+        <thead>
         <tr>
             <th>Mã số</th>
             <th>Họ tên</th>
@@ -11,121 +13,138 @@
             <th>Lớp học</th>
             <th class="text-center">Công cụ</th>
         </tr>
-    </thead>
-            <tr>
-                <td>001</td>
-                <td>Phạm Tiến Thành</td>
-                <td>1/1/1995</td>
-                <td>Nam</td>
-                <td>Hệ thống thông tin</td>
-                <td class="text-center">
-                	<button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#myModal">Sửa</button>
-                	<button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa</button>
-                	
-                </td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>Nguyễn Ngọc Thiện</td>
-                <td>5/1/1995</td>
-                <td>Nam</td>
-                <td>Sư phạm Tin</td>
-                <td class="text-center">
-                	<button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#myModal">Sửa</button>
-                	<button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa</button>
-                	
-                </td>
-            </tr>
-            <tr>
-                <td>003</td>
-                <td>Nguyễn Văn Trọng</td>
-                <td>11/2/1995</td>
-                <td>Nam</td>
-                <td>Hệ thống thông tin</td>
-                <td class="text-center">
-                	<button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#myModal">Sửa</button>
-                	<button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa</button>
-                	
-                </td>
-            </tr>
-            <tr>
-                <td>004</td>
-                <td>Tạ Minh Châu</td>
-                <td>15/4/1995</td>
-                <td>Nữ</td>
-                <td>Hệ thống thông tin</td>
-                <td class="text-center">
-                	<button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#myModal">Sửa</button>
-                	<button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa</button>
-                	
-                </td>
-            </tr>
-            <tr>
-                <td>005</td>
-                <td>Nguyễn Anh Đức</td>
-                <td>7/11/1995</td>
-                <td>Nam</td>
-                <td>Công nghệ phần mềm</td>
-                <td class="text-center">
-                	<button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#myModal">Sửa</button>
-                	<button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa</button>
-                	
-                </td>
-            </tr>
+        </thead>
+        <tr>
+            <td>001</td>
+            <td>Phạm Tiến Thành</td>
+            <td>1/1/1995</td>
+            <td>Nam</td>
+            <td>Hệ thống thông tin</td>
+            <td class="text-center">
+                <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal"
+                        data-target="#myModal">Sửa
+                </button>
+                <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa
+                </button>
+
+            </td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Nguyễn Ngọc Thiện</td>
+            <td>5/1/1995</td>
+            <td>Nam</td>
+            <td>Sư phạm Tin</td>
+            <td class="text-center">
+                <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal"
+                        data-target="#myModal">Sửa
+                </button>
+                <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa
+                </button>
+
+            </td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>Nguyễn Văn Trọng</td>
+            <td>11/2/1995</td>
+            <td>Nam</td>
+            <td>Hệ thống thông tin</td>
+            <td class="text-center">
+                <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal"
+                        data-target="#myModal">Sửa
+                </button>
+                <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa
+                </button>
+
+            </td>
+        </tr>
+        <tr>
+            <td>004</td>
+            <td>Tạ Minh Châu</td>
+            <td>15/4/1995</td>
+            <td>Nữ</td>
+            <td>Hệ thống thông tin</td>
+            <td class="text-center">
+                <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal"
+                        data-target="#myModal">Sửa
+                </button>
+                <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa
+                </button>
+
+            </td>
+        </tr>
+        <tr>
+            <td>005</td>
+            <td>Nguyễn Anh Đức</td>
+            <td>7/11/1995</td>
+            <td>Nam</td>
+            <td>Công nghệ phần mềm</td>
+            <td class="text-center">
+                <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal"
+                        data-target="#myModal">Sửa
+                </button>
+                <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa
+                </button>
+
+            </td>
+        </tr>
 
     </table>
-    </div>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel" >Học viên</h4>
-      </div>
-      <div class="modal-body">
-        <form>
-		  <div class="form-group">
-		    <label for="name">Họ tên:</label>
-		    <input type="name" class="form-control" id="name">
-		  </div>
-		  <div class="form-group">
-		    <label for="sex">Danh sách lớp học:</label>
-		    <div class="form-group">
-		    	<select id="selectbasic" name="selectbasic" class="form-control">
-			      <option value="1">D13HT01</option>
-			      <option value="2">D14PM02</option>
-			      <option value="2">ISC13KT</option>
-			      <option value="2">ISC14QT</option>
-			    </select>
-		  </div>
-		  <div class="form-group">
-		  <label for="date">Ngày sinh:</label>
-		  <input type="date" class="form-control" id="date">
-		  </div>
-		  <div class="form-group">
-		  <label for="sex">Giới tính:</label>
-		  	<label class="radio-inline">
-		      <input type="radio" name="sex">Nam
-		    </label>
-		    <label class="radio-inline">
-		      <input type="radio" name="sex">Nữ
-		    </label>
-		  </div>
-		  <div class="form-group">
-		    <label for="email">Email:</label>
-		    <input type="email" class="form-control" id="email">
-		  </div>
-		  <div class="form-group">
-		    <label for="phone">Số điện thoại:</label>
-		    <input type="phone" class="form-control" id="phone">
-		  </div>
-		</form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
-        <button type="button" class="btn btn-primary">Lưu</button>
-      </div>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Học viên</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Họ tên:</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="selectbasic">Danh sách lớp học:</label>
+                        <div class="form-group">
+                            <select id="selectbasic" name="selectbasic" class="form-control">
+                                <option value="1">D13HT01</option>
+                                <option value="2">D14PM02</option>
+                                <option value="2">ISC13KT</option>
+                                <option value="2">ISC14QT</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Ngày sinh:</label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+                        <div class="form-group">
+                            <label>Giới tính:</label>
+                            <label class="radio-inline">
+                                <input type="radio" name="sex">Nam
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="sex">Nữ
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại:</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
+                <button type="button" class="btn btn-primary">Lưu</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
