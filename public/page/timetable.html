@@ -1,13 +1,15 @@
 <div class="row col-md-12 custyle">
     <h2 class="text-center">Xem Lịch</h2>
+    <button type="button" class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#myModal">Thêm
+        lịch học
+    </button>
     <table class="table table-striped custab">
         <thead>
-        <button type="button" class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#myModal">Thêm lịch học</button>
         <tr>
-            <th>Tiết </th>
+            <th>Tiết</th>
             <th>Thứ</th>
-            <th>Phòng </th>
-            <th>Môn </th>
+            <th>Phòng</th>
+            <th>Môn</th>
             <th>DSHV</th>
             <th class="text-center">Công cụ</th>
         </tr>
@@ -18,11 +20,16 @@
             <td>A103</td>
             <td>Toán cao cấp A1</td>
             <td>
-                <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#myModal">Xem</button>
+                <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal"
+                        data-target="#myModal">Xem
+                </button>
             </td>
             <td class="text-center">
-                <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#myModal">Sửa</button>
-                <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa</button>
+                <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal"
+                        data-target="#myModal">Sửa
+                </button>
+                <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa
+                </button>
 
             </td>
         </tr>
@@ -32,11 +39,16 @@
             <td>A103</td>
             <td>Toán cao cấp A2</td>
             <td>
-                <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#myModal">Xem</button>
+                <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal"
+                        data-target="#myModal">Xem
+                </button>
             </td>
             <td class="text-center">
-                <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#myModal">Sửa</button>
-                <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa</button>
+                <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal"
+                        data-target="#myModal">Sửa
+                </button>
+                <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa
+                </button>
 
             </td>
         </tr>
@@ -48,19 +60,20 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel" >Lịch học</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Lịch học</h4>
             </div>
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        <label for="name">Tiết học:</label>
-                        <input type="name" class="form-control" id="tiethoc">
+                        <label for="hour">Tiết học:</label>
+                        <input type="number" class="form-control" id="hour">
                     </div>
                     <div class="form-group">
                         <label for="day">Thứ Học</label>
                         <div class="form-group">
-                            <select id="selectbasic" name="selectbasic" class="form-control">
+                            <select id="day" name="day" class="form-control">
                                 <option value="1">Thứ Hai</option>
                                 <option value="2">Thứ Ba</option>
                                 <option value="2">Thứ Tư</option>
@@ -71,21 +84,14 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="date">Phòng Học:</label>
-                            <input type="name" class="form-control" id="room">
+                            <label for="room">Phòng Học:</label>
+                            <input type="text" class="form-control" id="room">
                         </div>
                         <div class="form-group">
-                            <label for="name">Môn Học:</label>
-                            <input type="name" class="form-control" id="Subject">
+                            <label for="subject">Môn Học:</label>
+                            <input type="text" class="form-control" id="subject">
                         </div>
-                        <div class="form-group">
-                            <label for="email">Học Viên:</label>
-                            <input type="email" class="form-control" id="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Sỉ số:</label>
-                            <input type="phone" class="form-control" id="phone">
-                        </div>
+                    </div>
                 </form>
             </div>
             <div class="modal-footer">
