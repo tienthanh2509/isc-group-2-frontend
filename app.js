@@ -13,6 +13,34 @@ var app = express();
 
 app.use(express.static('public'));
 
+// API Section - Mock data
+app.get('/api/v1/faculty', function (req, res) {
+    var faculty = [
+        {
+            "id": "1",
+            "ids": "KHNN",
+            "name": "Tiếng Anh học thuật"
+        },
+        {
+            "id": "2",
+            "ids": "CNTT",
+            "name": "Công nghệ thông tin"
+        },
+        {
+            "id": "3",
+            "ids": "QTKD",
+            "name": "Kinh doanh - quản lý"
+        },
+        {
+            "id": "4",
+            "ids": "TTQT",
+            "name": "Thực tập quốc tế"
+        }
+    ];
+
+    res.json(faculty);
+});
+
 app.listen(process.env.PORT || 3000, function () {
     console.log('Listening on port ' + (process.env.PORT || 3000));
 });
