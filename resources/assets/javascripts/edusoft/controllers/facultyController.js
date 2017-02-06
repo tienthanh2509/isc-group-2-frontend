@@ -1,15 +1,30 @@
 "use strict";
 
-app.controller('facultyController', function ($scope, facultyService) {
-    facultyService.getData().then(function (response) {
-        // // Xử lý dữ liệu lấy được từ server
-        // angular.forEach(response.data, function (value, key) {
-        //
-        // });
-
+app.controller('FacultyController', function ($scope, facultyService) {
+    facultyService.getAll().then(function (response) {
         // Data binding
         $scope.faculty_list = response.data;
     }, function (reason) {
         // TODO: Thiết lập thông báo lỗi
+        alert('Some thing went wrong!');
     });
+});
+
+app.controller('FacultyAddController', function ($scope, facultyService) {
+    $scope.submitForm = function (isValid) {
+        console.log($scope.faculty);
+        var API_URL = '/api/v1/';
+
+        $scope.saving = true;
+        facultyService.addNew($scope.faculty)
+            .then(function (response) {
+                console.log(response);
+                $scope.saving = false;
+                $('#myModal').modal('hide');
+            }, function (response) {
+                // TODO: Thiết lập thông báo lỗi
+                alert('Some thing went wrong!');
+                $scope.saving = false;
+            });
+    };
 });

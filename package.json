@@ -21,8 +21,11 @@
   },
   "homepage": "https://github.com/tienthanh2509/isc-group-2-frontend#readme",
   "dependencies": {
+    "body-parser": "^1.16.0",
     "express": "^4.14.0",
-    "mysql": "^2.12.0"
+    "install": "^0.8.6",
+    "mysql": "^2.12.0",
+    "npm": "^4.1.2"
   },
   "devDependencies": {
     "grunt": "^1.0.1",

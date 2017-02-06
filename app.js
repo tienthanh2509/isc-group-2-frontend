@@ -9,8 +9,15 @@
  */
 
 var express = require('express');
+var bodyParser = require('body-parser')
+
 var app = express();
 
+// Parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+// Parse application/json
+app.use(bodyParser.json());
+// WebRoot
 app.use(express.static('public'));
 
 // API Section - Mock data
@@ -39,6 +46,17 @@ app.get('/api/v1/faculty', function (req, res) {
     ];
 
     res.json(faculty);
+});
+app.post('/api/v1/faculty', function (req, res) {
+    var faculty = [
+        {
+            "error": 0,
+            "message": "OK"
+        }
+    ];
+
+    res.json(faculty);
+    console.log(req.body);
 });
 
 app.listen(process.env.PORT || 3000, function () {
