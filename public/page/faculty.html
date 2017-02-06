@@ -8,6 +8,7 @@
     <h2 class="text-center">Danh sách các khoa</h2>
 
     <button type="button" class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#myModal">
+        <i class="fa fa-plus" aria-hidden="true"></i>
         Thêm mới
     </button>
 
@@ -26,10 +27,10 @@
             <td>{{ i.ids }}</td>
             <td>{{ i.name }}</td>
             <td class="text-center">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalEdit">
                     <i class="fa fa-edit" aria-hidden="true"></i>
                 </button>
-                <button type="button" class="btn btn-danger" >
+                <button type="button" class="btn btn-danger">
                     <i class="fa fa-trash" aria-hidden="true"></i>
                 </button>
 
@@ -39,28 +40,66 @@
     </table>
 </div>
 
-<!--&lt;!&ndash; Modal &ndash;&gt;-->
-<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">-->
-    <!--<div class="modal-dialog" role="document">-->
-        <!--<div class="modal-content">-->
-            <!--<div class="modal-header">-->
-                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-                    <!--<span aria-hidden="true">&times;</span>-->
-                <!--</button>-->
-                <!--<h4 class="modal-title" id="myModalLabel">Thêm khoa mới</h4>-->
-            <!--</div>-->
-            <!--<div class="modal-body">-->
-                <!--<form>-->
-                    <!--<div class="form-group">-->
-                        <!--<label for="name">Tên khoa</label>-->
-                        <!--<input type="text" class="form-control" id="name">-->
-                    <!--</div>-->
-                <!--</form>-->
-            <!--</div>-->
-            <!--<div class="modal-footer">-->
-                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>-->
-                <!--<button type="button" class="btn btn-primary">Lưu</button>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
+<!-- Modal thêm mới -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel"><i class="fa fa-plus" aria-hidden="true"></i> Thêm khoa mới</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="faculty_id">Mã khoa</label>
+                        <input type="text" class="form-control" id="faculty_id">
+                        <span class="help-block">VD: CNTT</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="faculty_name">Tên khoa</label>
+                        <input type="text" class="form-control" id="faculty_name">
+                        <span class="help-block">VD: Công nghệ thông tin</span>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal sửa thông tin -->
+<div class="modal fade" id="myModalEdit" tabindex="-1" role="dialog" aria-labelledby="myModalLabelEdit">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabelEdit"><i class="fa fa-plus" aria-hidden="true"></i> Cập nhật thông tin khoa</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="faculty_id_new">Mã khoa</label>
+                        <input type="text" class="form-control" id="faculty_id_new">
+                        <span class="help-block">VD: CNTT</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="faculty_name_new">Tên khoa</label>
+                        <input type="text" class="form-control" id="faculty_name_new">
+                        <span class="help-block">VD: Công nghệ thông tin</span>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary">Cập nhật</button>
+            </div>
+        </div>
+    </div>
+</div>
