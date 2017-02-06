@@ -46,7 +46,7 @@ body {
   display: block;
   float: left;
   width: 250px;
-  background: #1ccacd;
+  background: #873700;
 }
 
 .content {
@@ -57,7 +57,7 @@ body {
 
 .sidebar-nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  background: linear-gradient(to right, #ff3f4d 10px, #1ccacd 10px) repeat-x;
+  background: linear-gradient(to right, #FFAF0A 10px, #873700 10px) repeat-x;
 }
 
 .sidebar-nav ul {
@@ -87,7 +87,7 @@ body {
 }
 
 .sidebar-nav ul a:focus, .sidebar-nav ul a:active {
-  color: #92571F;
+  color: #873700;
   text-decoration: none;
   background-color: #ffffff;
   border: #FFAF0A solid 1px;
@@ -107,7 +107,7 @@ body {
 }
 
 .sidebar-nav ul ul a:focus, .sidebar-nav ul ul a:active {
-  color: #92571F;
+  color: #873700;
   text-decoration: none;
   background-color: #ffffff;
   border: #FFAF0A solid 1px;
@@ -116,7 +116,7 @@ body {
 .sidebar-nav ul ul a:hover {
   color: #fff;
   text-decoration: none;
-  background-color: #ff3f4d;
+  background-color: #FFAF0A;
 }
 
 .sidebar-nav-item {
@@ -130,7 +130,7 @@ body {
 /* Sticky header styles
 -------------------------------------------------- */
 .navbar-inverse {
-  background-color: #92571F;
+  background-color: #873700;
   border-color: #ffffff;
 }
 
@@ -141,7 +141,7 @@ body {
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
 .navbar-inverse .navbar-nav > .active > a:hover {
-  color: #92571F;
+  color: #873700;
   background-color: #ffffff;
 }
 
@@ -159,7 +159,7 @@ body {
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-  background-color: #92571F;
+  background-color: #873700;
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
@@ -167,7 +167,7 @@ body {
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
-  color: #92571F;
+  color: #873700;
   background-color: #ffffff;
 }
 
@@ -178,7 +178,7 @@ body {
 }
 
 .modal-header {
-  background-color: #92571F;
+  background-color: #873700;
 }
 
 .modal-title {
