@@ -57,7 +57,7 @@ body {
 
 .sidebar-nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  background: linear-gradient(to right, #FFAF0A 10px, #873700 10px) repeat-x;
+  background: linear-gradient(to right, #FFAF78 10px, #873700 10px) repeat-x;
 }
 
 .sidebar-nav ul {
@@ -83,18 +83,18 @@ body {
 .sidebar-nav ul a:hover {
   color: #fff;
   text-decoration: none;
-  background-color: #FFAF0A;
+  background-color: #FFAF78;
 }
 
 .sidebar-nav ul a:focus, .sidebar-nav ul a:active {
   color: #873700;
   text-decoration: none;
   background-color: #ffffff;
-  border: #FFAF0A solid 1px;
+  border: #FFAF78 solid 1px;
 }
 
 .metismenu li.active:focus .has-arrow:after {
-  border-color: #FFAF0A;
+  border-color: #FFAF78;
 }
 
 .metismenu li.active .has-arrow:after {
@@ -110,13 +110,13 @@ body {
   color: #873700;
   text-decoration: none;
   background-color: #ffffff;
-  border: #FFAF0A solid 1px;
+  border: #FFAF78 solid 1px;
 }
 
 .sidebar-nav ul ul a:hover {
   color: #fff;
   text-decoration: none;
-  background-color: #FFAF0A;
+  background-color: #FFAF78;
 }
 
 .sidebar-nav-item {
@@ -151,7 +151,7 @@ body {
 
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #ffffff;
-  background-color: #FFAF0A;
+  background-color: #FFAF78;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -174,7 +174,7 @@ body {
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
   color: #ffffff;
   text-decoration: none;
-  background-color: #FFAF0A;
+  background-color: #FFAF78;
 }
 
 .modal-header {
