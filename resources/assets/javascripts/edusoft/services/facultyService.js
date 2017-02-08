@@ -12,5 +12,9 @@ app.factory('facultyService', function ($http) {
         return $http.post(API_URL, data);
     };
 
+    api.deleteById = function (faculty_id) {
+        return $http.delete(API_URL + '/' + faculty_id);
+    };
+
     return api;
 });
