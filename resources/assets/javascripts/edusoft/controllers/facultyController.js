@@ -8,6 +8,11 @@ app.controller('FacultyController', function ($scope, facultyService) {
         // TODO: Thiết lập thông báo lỗi
         alert('Some thing went wrong!');
     });
+
+    $scope.delete = function (faculty_id) {
+        if (confirm('Bạn có chắc không?'))
+            facultyService.deleteById(faculty_id);
+    };
 });
 
 app.controller('FacultyAddController', function ($scope, facultyService) {

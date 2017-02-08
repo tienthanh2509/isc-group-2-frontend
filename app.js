@@ -58,6 +58,17 @@ app.post('/api/v1/faculty', function (req, res) {
     res.json(faculty);
     console.log(req.body);
 });
+app.delete('/api/v1/faculty/:id', function (req, res) {
+    var faculty = [
+        {
+            "error": 0,
+            "message": "OK"
+        }
+    ];
+
+    res.json(faculty);
+    console.log(req.body);
+});
 
 app.listen(process.env.PORT || 3000, function () {
     console.log('Listening on port ' + (process.env.PORT || 3000));
