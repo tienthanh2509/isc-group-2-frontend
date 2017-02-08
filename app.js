@@ -24,14 +24,14 @@ var connection = mysql.createConnection({
     database: process.env.DB_DATABASE ||'quan-ly-hoc-vien'
 
 });
-connection.connect(function (err) {
-    if (err) {
-        console.error(err.stack);
-        return;
-    }
-
-    console.log('[SYS] Database connected as id ' + connection.threadId);
-});
+// connection.connect(function (err) {
+//     if (err) {
+//         console.error(err.stack);
+//         return;
+//     }
+//
+//     console.log('[SYS] Database connected as id ' + connection.threadId);
+// });
 
 // Parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
