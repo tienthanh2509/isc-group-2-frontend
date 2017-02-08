@@ -41,7 +41,8 @@
 </div>
 
 <!-- Modal thêm mới -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ng-controller="FacultyAddController">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     ng-controller="FacultyAddController">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <form name="facultyForm" ng-submit="submitForm()">
@@ -70,7 +71,9 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
-                    <button type="submit" class="btn btn-primary" ng-disabled="facultyForm.$invalid" ng-hide="saving">Lưu</button>
+                    <button type="submit" class="btn btn-primary" ng-disabled="facultyForm.$invalid" ng-hide="saving">
+                        Lưu
+                    </button>
                     <button type="submit" class="btn btn-primary" disabled ng-show="saving">
                         <i class="fa fa-spinner fa-spin"></i>
                         Đang xử lý...
@@ -89,7 +92,8 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="myModalLabelEdit"><i class="fa fa-plus" aria-hidden="true"></i> Cập nhật thông tin khoa</h4>
+                <h4 class="modal-title" id="myModalLabelEdit"><i class="fa fa-plus" aria-hidden="true"></i> Cập nhật
+                    thông tin khoa</h4>
             </div>
             <div class="modal-body">
                 <form>
