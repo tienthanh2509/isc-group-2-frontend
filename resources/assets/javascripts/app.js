@@ -10,8 +10,7 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
     $locationProvider.hashPrefix('!');
     $routeProvider
         .when("/", {
-            templateUrl: "page/welcome.html",
-            controller: "finalExamController"
+            templateUrl: "page/welcome.html"
         })
         .when("/about", {
             templateUrl: "page/about.html"
