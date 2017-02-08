@@ -19,7 +19,10 @@ app.controller('FacultyAddController', function ($scope, facultyService) {
         facultyService.addNew($scope.faculty)
             .then(function (response) {
                 console.log(response);
+
                 $scope.saving = false;
+                $scope.faculty = {};
+
                 $('#myModal').modal('hide');
             }, function (response) {
                 // TODO: Thiết lập thông báo lỗi
