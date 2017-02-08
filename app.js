@@ -90,6 +90,20 @@ app.delete('/api/v1/faculty/:id', function (req, res) {
     console.log(req.params);
 });
 
+app.get('/api/v1/student', function (req, res) {
+    var student = [
+        {
+            "id": "011",
+            "name": "Nguyễn Bính",
+            "birthday": "1/1/1995",
+            "sex":"Nam",
+            "faculty":"Hệ thống thông tin"
+        }
+    ];
+
+    res.json(student);
+});
+
 app.listen(process.env.PORT || 3000, function () {
     console.log('Listening on port ' + (process.env.PORT || 3000));
 });
