@@ -44,6 +44,7 @@ module.exports = function (grunt) {
                     resources + '/javascripts/navbar.js',
                     resources + '/javascripts/app.js',
                     resources + '/javascripts/edusoft/services/facultyService.js',
+                    resources + '/javascripts/edusoft/services/studentService.js',
                     resources + '/javascripts/edusoft/controllers/headerNavbarController.js',
                     resources + '/javascripts/edusoft/controllers/facultyController.js'
                 ],
