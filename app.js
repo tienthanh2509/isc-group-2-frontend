@@ -15,8 +15,7 @@ var mysql = require("mysql");
 var app = express();
 
 // Thiết lập kết nối CSDL
-console.log("[SYS] Establishing database connections...");
-var connection = mysql.createConnection({
+var connection = mysql.createPool({
     host: process.env.DB_HOST || 'localhost',
     user: process.env.DB_USER ||'isc',
     port: process.env.DB_PORT ||'3306',
@@ -24,14 +23,6 @@ var connection = mysql.createConnection({
     database: process.env.DB_DATABASE ||'quan-ly-hoc-vien'
 
 });
-// connection.connect(function (err) {
-//     if (err) {
-//         console.error(err.stack);
-//         return;
-//     }
-//
-//     console.log('[SYS] Database connected as id ' + connection.threadId);
-// });
 
 // Parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
