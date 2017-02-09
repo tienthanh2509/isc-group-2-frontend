@@ -1,11 +1,13 @@
- <div class="row col-md-12 custyle">
- <h2 class="text-center">Danh sách môn học</h2>
+<div class="row col-md-12 custyle"  ng-controller="SubjectController">
+    <h2 class="text-center">Danh sách môn học</h2>
     <table class="table table-striped custab">
-    <thead>
-    <button type="button" class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#myModal">Thêm mới môn học</button>
-    <div class="col-xs-2 input-group-sm pull-right">
-      <input class="form-control" id="ex2" type="text" placeholder="Lọc danh sách theo khoa...">
-    </div> 
+        <thead>
+        <button type="button" class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#myModal">Thêm
+            mới môn học
+        </button>
+        <div class="col-xs-2 input-group-sm pull-right">
+            <input class="form-control" id="ex2" type="text" placeholder="Lọc danh sách theo khoa...">
+        </div>
         <tr>
             <th>Mã môn học</th>
             <th>Tên môn học</th>
@@ -13,32 +15,23 @@
             <th>Thuộc Khoa</th>
             <th class="text-center">Thao tác</th>
         </tr>
-    </thead>
-            <tr>
-                <td>ISC1PM</td>
-                <td>Lập trình Java</td>
-                <td>3</td>
-                <td>Công nghệ thông tin</td>
-                <td class="text-center">
-                	<button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#myModal">Sửa</button>
-                	<button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa</button>
-                	
-                </td>
-            </tr>
-            <tr>
-                <td>ISC1KT</td>
-                <td>Kinh doanh quản lý</td>
-                <td>2</td>
-                <td>Quản Trị Kinh doanh</td>
-                <td class="text-center">
-                	<button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#myModal">Sửa</button>
-                	<button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa</button>
-                	
-                </td>
-            </tr>
+        </thead>
+        <tr ng-repeat="s in subject_list">
+            <td> {{ s.maMH }}</td>
+            <td> {{ s.tenMH }}</td>
+            <td> {{ s.soTC }}</td>
+            <td> {{ s.khoa}}</td>
+            <td class="text-center">
+                <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal"
+                        data-target="#myModal">Sửa
+                </button>
+                <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Xóa
+                </button>
+            </td>
+        </tr>
 
     </table>
-    </div>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
@@ -67,11 +60,12 @@
                             </select>
                         </div>
                     </div>
-		        </form>            
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
-        <button type="button" class="btn btn-primary">Lưu</button>
-      </div>
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
+                    <button type="button" class="btn btn-primary">Lưu</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>

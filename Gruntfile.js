@@ -45,9 +45,11 @@ module.exports = function (grunt) {
                     resources + '/javascripts/app.js',
                     resources + '/javascripts/edusoft/services/facultyService.js',
                     resources + '/javascripts/edusoft/services/studentService.js',
+                    resources + '/javascripts/edusoft/services/subjectService.js',
                     resources + '/javascripts/edusoft/controllers/headerNavbarController.js',
                     resources + '/javascripts/edusoft/controllers/facultyController.js',
-                    resources + '/javascripts/edusoft/controllers/studentController.js'
+                    resources + '/javascripts/edusoft/controllers/studentController.js',
+                    resources + '/javascripts/edusoft/controllers/subjectController.js'
                 ],
                 dest: 'public/assets/js/edusoft.js'
             }
