@@ -9,28 +9,30 @@
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs ruby
 ## Windows
-https://nodejs.org/en/download/
-http://rubyinstaller.org/downloads/
+#https://nodejs.org/en/download/
+#http://rubyinstaller.org/downloads/
 
 # Install Bower, Grunt, Sass
 npm install -g bower grunt
 gem install sass
 
 # Warning! Make sure you have private key before clone using ssh else try https instead
+# Sign your commit with GPG keys
 git clone git@github.com:tienthanh2509/isc-group-2-frontend.git
-
-cd isc-group-2-frontend
 
 ```
 
 # How to play :)
 ```bash
+cd isc-group-2-frontend
+
 # Install npm dependencies
 npm install
 # Install bower dependencies
 bower install
 
 # Grunt task "grunt watch" if needed!
+# Available task: default, css, js, clean, copy
 grunt
 
 # Run nodejs express server | Use PORT env for custom listening port
