@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "grunt && node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,9 +12,9 @@
     "url": "git+https://github.com/tienthanh2509/isc-group-2-frontend.git"
   },
   "keywords": [
-    "construction",
-    "cost",
-    "estimates"
+    "isc",
+    "frontend",
+    "backend"
   ],
   "license": "GPL-3.0",
   "bugs": {
